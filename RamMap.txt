@@ -1,10 +1,15 @@
 RAM
-Player Life: 0x430216f8
-Player Pos X: 0x11344340
-Player Pos Y: 0x11344344
-Player Pos Z: 0x11344348
-Enemy Life AoB: 00 00 00 ?? 4? ?? ?? 00 4? ?? ?? 58 43 ?? ?? ?? 4? ?? ?? F0 4? ?? ?? ?? 44 4 bit big endian
+Player Life: 0x430216f8 4 bit big endian
+Player Pos X: 0x11344340 float big endian
+Player Pos Y: 0x11344344 float big endian
+Player Pos Z: 0x11344348 float big endian
+Camera?: 0x44E5827C
+Enemy Life AoB: 00 00 00 ?? 4? ?? ?? 00 4? ?? ?? 58 43 ?? ?? ?? 4? ?? ?? F0 4? ?? ?? ?? 44  4 bit big endian
 Enemy Scale X : Life - 0x2cc float big endian
 Enemy Scale Y : Life - 0x2C8 float big endian
 Enemy Scale Z : Life - 0x2C4 float big endian
 Enemy Life bar postion : Life - 0x254 float big endian
+
+
+Notes:
+r13 register is mostly point to the base address
